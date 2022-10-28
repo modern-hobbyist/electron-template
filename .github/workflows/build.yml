@@ -20,7 +20,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Linux
-          path: ./out/make/deb/x64/mbl-wizard_1.0.0_amd64.deb
+          path: ./out/make/deb/x64/electron-template_1.0.0_amd64.deb
 
   build_on_mac:
     name: Mac
@@ -41,7 +41,7 @@ jobs:
         with:
           name: macOS
           path: |
-            ./out/make/mbl-wizard-1.0.0-x64.dmg
+            ./out/make/electron-template-1.0.0-x64.dmg
 
   build_on_win:
     name: Windows
@@ -61,7 +61,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Windows
-          path: ./out/mbl-wizard-win32-x64/mbl-wizard.exe
+          path: ./out/electron-template-win32-x64/electron-template.exe
   release:
     name: Release
     needs: [ build_on_linux, build_on_mac, build_on_win ]
@@ -81,4 +81,4 @@ jobs:
           tag: ${{ steps.tag_version.outputs.new_tag }}
           name: Release ${{ steps.tag_version.outputs.new_tag }}
           body: ${{ steps.tag_version.outputs.changelog }}
-          artifacts: "macOS/mbl-wizard-1.0.0-x64.dmg,Linux/mbl-wizard_1.0.0_amd64.deb,Windows/mbl-wizard.exe"
+          artifacts: "macOS/electron-template-1.0.0-x64.dmg,Linux/electron-template_1.0.0_amd64.deb,Windows/electron-template.exe"

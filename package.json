@@ -1,8 +1,8 @@
 {
-  "name": "mbl-wizard",
-  "productName": "mbl-wizard",
+  "name": "electron-template",
+  "productName": "electron-template",
   "version": "1.0.0",
-  "description": "A Cross-Platform Application to Assist with configuring Mesh Bed Leveling for applicable 3d printers",
+  "description": "",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",

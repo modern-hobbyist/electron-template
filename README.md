@@ -1,6 +1,9 @@
-# Mesh Bed Leveling Wizard (MBL Wizard)
+# Electron Template
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+The goal of this project is to streamline the process of getting CI/CD set up for an electron app using Typescript,
+React, Redux and Material UI
 
 # Getting Started
 
