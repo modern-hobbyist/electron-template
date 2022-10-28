@@ -2,7 +2,7 @@
   "name": "electron-template",
   "productName": "electron-template",
   "version": "1.0.0",
-  "description": "",
+  "description": "A template repo with Electron, React, Redux and Material UI. Along with GitHub Actions to build, tag and release code.",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",

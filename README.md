@@ -5,6 +5,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The goal of this project is to streamline the process of getting CI/CD set up for an electron app using Typescript,
 React, Redux and Material UI
 
+# Bugs
+
+Still need to figure out the release part correctly. Currently, tags get bumped for every build, I think whether it
+passes or not. Need to make sure only builds that pass bump the release number.
+
 # Getting Started
 
 Install dependencies with `yarn`
